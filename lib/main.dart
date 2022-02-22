@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,13 +11,17 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Material App Bar'),
+          backgroundColor: Colors.red,
+          title: Text('flutter'),
         ),
         body: Center(
-          child: Container(
-            child: Text('carlos salas'),
+            child: Container(
+          child: Text(
+            'bienvenido',
           ),
-        ),
+          height: 200,
+          color: Colors.red,
+        )),
       ),
     );
   }
